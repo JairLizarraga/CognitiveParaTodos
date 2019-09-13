@@ -1,4 +1,14 @@
 extends ./../layout
 
 block content
-	p calendario
+
+	h1.central-text.text-center Calendario de actividades
+	h4.central-text(style='margin-top: 150px; text-align: center') Consulta aquí nuestras proximas actividades de voluntariado
+
+
+	section.ftco-section.contact-section.ftco-degree-bg(style="margin: 50px;")
+		h3.container.text-center Próximas actividades
+
+
+	.d-flex.justify-content-center.mb-5
+		iframe.airtable-embed(src='https://airtable.com/embed/shreGZ4Rfp1PTo8MB?backgroundColor=cyan&viewControls=on', frameborder='0', onmousewheel='', width='80%', height='533', style='background: transparent; border: 1px solid #ccc;')

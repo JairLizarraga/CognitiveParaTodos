@@ -5,14 +5,11 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var demoRouter = require('./routes/demo');
 var badgesRouter = require('./routes/badges');
 var calendarioRouter = require('./routes/calendario');
 var tutorialesRouter = require('./routes/tutoriales');
-
-const http = require('http');
-const reload = require('reload');
+var recursosRouter = require('./routes/recursos');
+var contactoRouter = require('./routes/contacto');
 
 var app = express();
 
@@ -27,11 +24,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/demo', demoRouter);
 app.use('/badges', badgesRouter);
 app.use('/calendario', calendarioRouter);
 app.use('/tutoriales', tutorialesRouter);
+app.use('/recursos', recursosRouter);
+app.use('/contacto', contactoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -53,9 +50,6 @@ module.exports = app;
 
 
 var port = process.env.PORT || 3000
-
-const server = http.createServer(app);
-server.listen(port, function() {
+app.listen(port, function() {
     console.log("To view your app, open this link in your browser: http://localhost:" + port);
 });
-reload(app);

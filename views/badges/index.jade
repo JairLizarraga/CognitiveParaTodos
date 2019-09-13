@@ -2,51 +2,107 @@ extends ./../layout
 
 block content
 
-	section.ftco-section.contact-section.ftco-degree-bg
+	h1.central-text.text-center Badges
+	h4.central-text(style='margin-top: 150px; text-align: center') Información relevante de los badges ofrecidos por Responsabilidad Social Corporativa
+
+	section.ftco-section.contact-section.ftco-degree-bg(style="margin: 50px;")
 		.container.bg-light
+			.row
+				.col-md-12
+						h1.col.text-center.mt-4 TJBot Workshop badge
+				.col-md-12
+						p.col.text-center.mt-1.mb-4.text-justify	El poseedor de este badge sabe como construir, configurar y programar
+							| TJBots, desarrollando soluciones en Node-RED utilizando servicios de 
+							| IBM Watson y APIs de terceros. Adicionalmente, el poseedor de este badge
+							| ha demostrado habilidades liderando workshops. 
 			.row.block-9
-				.col-md-6.pr-md-5
+				.w-100
+				.col-md-6
 					.row.d-flex.mb-5.contact-info
 						.col-md-12.mb-4
-							h2.h5
+							h5
 								| ¿Qué necesito para obtener el badge?
 						.w-100
 						ul.col-md-11.list-group
-							li.list-group-item Ser profesor activo de una Universidad o Institución Educativa en América Latina.
-							li.list-group-item Completar el entrenamiento presencial de 8 horas "TJBot Teacher Advocacy".
-							li.list-group-item Implementar los conocimientos adquiridos en una sesión presencial con un grupo de al menos 15 alumnos.
-							li.list-group-item Construir, configurar y habilitar las capacidades cognitivas de un TJBot.
+							li.ml-5.text-justify(style='list-style-type: square;') Ser profesor activo de una Universidad o Institución Educativa en América Latina.
+							li.ml-5.text-justify(style='list-style-type: square;') Completar el entrenamiento presencial de 8 horas "TJBot Teacher Advocacy".
+							li.ml-5.text-justify(style='list-style-type: square;') Implementar los conocimientos adquiridos en una sesión presencial con un grupo de al menos 15 alumnos.
+							li.ml-5.text-justify(style='list-style-type: square;') Construir, configurar y habilitar las capacidades cognitivas de un TJBot.
+						p.ml-5.font-italic Badge disponible solo para maestros de instituciones educativas.
 				.col-md-6
-					img(src='images/TJBot Teacher Advocate image.png', style='width: 100%')
+					img(src='images/TJBot Teacher Advocate image.png', style='width: 50%;')
 			.row.d-flex.mb-5.contact-info
 				.col-md-12.mb-4
 					h2.h4 Contacto e información
 				.w-100
 				.col-md-6
-					p
-						span Programa TJBot regional latinoamérica:
-					p México | Jair Lizarraga | alizarra@mx1.ibm.com
+					p.font-weight-bold Programa TJBot regional latinoamérica:
+					p.m-0 México | Jair Lizarraga | alizarra@mx1.ibm.com
 					p México | Carlos Saucedo | saucedoc@mx1.ibm.com
 				.col-md-6
-					p IBM Open Badge Program
-					p
-						| Información general del badge: https://www.youracclaim.com/org/ibm/badge/tjbot-advocate-mexico
+					p.font-weight-bold IBM Open Badge Program
+					p.m-0 Información general del badge: 
+						a(href="https://www.youracclaim.com/org/ibm/badge/tjbot-advocate-mexico") Your Acclaim
 					p Contacto: badge@us.ibm.com
 
+	section.ftco-section.contact-section.ftco-degree-bg(style="margin: 50px;")
+		.container.bg-light
+			.row
+				.col-md-12
+						h1.col.text-center.mt-4 TJBot Teacher badge
+				.col-md-12
+						p.col.text-center.mt-1.mb-4.text-justify	El poseedor de este badge sabe como construir, configurar y programar
+							| TJBots, desarrollando soluciones en Node-RED utilizando servicios de 
+							| IBM Watson y APIs de terceros. Adicionalmente, el poseedor de este badge
+							| ha demostrado habilidades liderando workshops. A diferencia del badge
+							| "TJBot workshop", el poseedor de este badge es un profesor que cuenta con las 
+							| bases necesarias para implementar los principios de Inteligencia Artificial y computación
+							| cognitiva en el salón de clases.
+			.row.block-9
+				.w-100
+				.col-md-6
+					.row.d-flex.mb-5.contact-info
+						.col-md-12.mb-4
+							h5
+								| ¿Qué necesito para obtener el badge?
+						.w-100
+						ul.col-md-11.list-group
+							li.ml-5.text-justify(style='list-style-type: square;') Ser profesor activo de una Universidad o Institución Educativa en América Latina.
+							li.ml-5.text-justify(style='list-style-type: square;') Completar el entrenamiento presencial de 8 horas "TJBot Teacher Advocacy".
+							li.ml-5.text-justify(style='list-style-type: square;') Implementar los conocimientos adquiridos en una sesión presencial con un grupo de al menos 15 alumnos.
+							li.ml-5.text-justify(style='list-style-type: square;') Construir, configurar y habilitar las capacidades cognitivas de un TJBot.
+						p.ml-5.font-italic Badge disponible solo para maestros de instituciones educativas.
+				.col-md-6
+					img(src='images/TJBot+Teacherc Advocate image.png', style='width: 50%;')
+			.row.d-flex.mb-5.contact-info
+				.col-md-12.mb-4
+					h2.h4 Contacto e información
+				.w-100
+				.col-md-6
+					p.font-weight-bold Programa TJBot regional latinoamérica:
+					p.m-0 México | Jair Lizarraga | alizarra@mx1.ibm.com
+					p México | Carlos Saucedo | saucedoc@mx1.ibm.com
+				.col-md-6
+					p.font-weight-bold IBM Open Badge Program
+					p.m-0 Información general del badge: 
+						a(href="https://www.youracclaim.com/org/ibm/badge/tjbot-teacher-advocate") Your Acclaim
+					p Contacto: badge@us.ibm.com
 
-	
-	footer.ftco-footer.bg-white.ftco-section
-		.container
-			.row.mb-5
-				.col-md
-					.ftco-footer-widget.mb-6
-						h2.ftco-heading-2
-							| PRIVACY STATEMENT
-						p
-							| NOTICE: IBM leverages the services of Credly's Acclaim platform, a 3rd party data processor authorized by IBM and located in the United States, to assist in the administration of the IBM Digital Badge program. In order to issue you an IBM Digital Badge, your personal information (name, email address, and badge earned) will be shared with the Credly’s Acclaim platform. You will receive an email notification from Acclaim with instructions for claiming the badge.
-				.col-md
-					.ftco-footer-widget.mb-6
-						h2.ftco-heading-2
-							br
-						p
-							| Your personal information is used to issue your badge and for program reporting and operational purposes. It will be handled in a manner consistent with IBM privacy practices. The IBM Privacy Statement can be viewed here: https://www.ibm.com/privacy/us/en/ . IBM employees can view the IBM Internal Privacy Statement here: https://w3.ibm.com/w3publisher/w3-privacy-notice .
+	footer.page-footer.font-small.teal.pt-4.bg-dark
+		.container-fluid.text-center.text-md-left.text-white
+			.row
+				.col-md-12.mt-md-0.mt-3
+					h5.text-uppercase.font-weight-bold.text-justify.text-center Privacy statement.
+					p.text-justify.text-center
+					| NOTICE: IBM leverages the services of Credly's Acclaim platform, a 3rd party data processor authorized by IBM 
+					| and located in the United States, to assist in the administration of the IBM Digital Badge program. In order 
+					| to issue you an IBM Digital Badge, your personal information (name, email address, and badge earned) will be 
+					| shared with the Credly’s Acclaim platform.  You will receive an email notification from Acclaim with instructions 
+					| for claiming the badge. Your personal information is used to issue your badge and for program reporting and operational 
+					| purposes. It will be handled in a manner consistent with IBM privacy practices.  The IBM Privacy Statement can be viewed 
+					| here:  
+					a(href='https://www.ibm.com/privacy/us/en') https://www.ibm.com/privacy/us/en/.   
+					| IBM employees can view the IBM Internal Privacy Statement here: 
+					a(href='https://w3.ibm.com/w3publisher/w3-privacy-notice') https://w3.ibm.com/w3publisher/w3-privacy-notice.
+
+

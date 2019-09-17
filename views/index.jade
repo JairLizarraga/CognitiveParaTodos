@@ -1,5 +1,6 @@
 extends layout
 block content
+	script(async='', src='https://platform.twitter.com/widgets.js', charset='utf-8')
 	h1.central-text.text-center Responsabilidad Social Corporativa
 	h2.central-text(style='margin-top: 150px;') IBM de México
 
@@ -27,9 +28,19 @@ block content
 						li.ml-5.text-justify(style='list-style-type: square;') Calendario de actividades
 						li.ml-5.text-justify(style='list-style-type: square;') Contacto
 						li.ml-5.text-justify(style='list-style-type: square;') Materiales y recursos de nuestros talleres
-			.row
-				br
-				br
-				h5 Te invitamos a explorar las actividades que tenemos tanto para IBMistas como para las fundaciones.
 
+	h5.text-center.pb-2 Te invitamos a explorar las actividades que tenemos tanto para IBMistas como para las fundaciones.
 	iframe.airtable-embed.mb-5(src='https://airtable.com/embed/shrhys6CNyZOZcttY?backgroundColor=cyan&viewControls=on', frameborder='0', onmousewheel='', width='100%', height='533', style='background: transparent; border: 1px solid #ccc;')
+
+
+	.container
+		.row
+			h2 Ciudadanía corporativa en las redes
+		.row
+			.col-md-4
+				a.twitter-timeline(data-width='300', data-height='400', data-dnt='true', data-theme='dark', href='https://twitter.com/Jair_LizarragaV?ref_src=twsrc%5Etfw') Tweets by Jair_LizarragaV
+			.col-md-4
+				a.twitter-timeline(data-width='300', data-height='400', data-dnt='true', data-theme='dark', href='https://twitter.com/carlossm68?ref_src=twsrc%5Etfw') Tweets by carlossm68
+			.col-md-4
+				a.twitter-timeline(data-width='300', data-height='400', data-dnt='true', data-theme='dark', href='https://twitter.com/clauuchacon?ref_src=twsrc%5Etfw') Tweets by clauuchacon
+

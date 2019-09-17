@@ -5,11 +5,11 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var badgesRouter = require('./routes/badges');
-var calendarioRouter = require('./routes/calendario');
-var tutorialesRouter = require('./routes/tutoriales');
-var recursosRouter = require('./routes/recursos');
-var contactoRouter = require('./routes/contacto');
+var badgesRouter = require('./routes/badges/badges');
+var calendarioRouter = require('./routes/calendario/calendario');
+var tutorialesRouter = require('./routes/tutoriales/tutoriales');
+var recursosRouter = require('./routes/recursos/recursos');
+var contactoRouter = require('./routes/contacto/contacto');
 
 var app = express();
 

@@ -1,6 +1,6 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+	h1.central-text.text-center= message
+	h2.central-text(style='margin-top: 50px; text-align: center')= error.status
+	pre.central-text(style='margin-top: 250px;') #{error.stack}

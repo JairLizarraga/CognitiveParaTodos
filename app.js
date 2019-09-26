@@ -8,7 +8,6 @@ var indexRouter = require('./routes/index');
 var badgesRouter = require('./routes/badges/badges');
 var calendarioRouter = require('./routes/calendario/calendario');
 var tutorialesRouter = require('./routes/tutoriales/tutoriales');
-var recursosRouter = require('./routes/recursos/recursos');
 var contactoRouter = require('./routes/contacto/contacto');
 
 var app = express();
@@ -27,7 +26,6 @@ app.use('/', indexRouter);
 app.use('/badges', badgesRouter);
 app.use('/calendario', calendarioRouter);
 app.use('/tutoriales', tutorialesRouter);
-app.use('/recursos', recursosRouter);
 app.use('/contacto', contactoRouter);
 
 // catch 404 and forward to error handler

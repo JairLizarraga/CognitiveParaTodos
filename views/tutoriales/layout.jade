@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+
+		
+		script(src="/javascripts/jquery-3.4.1.min.js")
+		script(src="/javascripts/bootstrap.js")
+		script(src="/javascripts/pdfobject.js")
+	body
+		nav.navbar.navbar-expand-lg.bg-dark.custom-toggler
+			a.navbar-brand(href='/').text-white(style='font-weight: bold;') Responsabilidad Social Corporativa - IBM de México
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			#navbarNav.collapse.navbar-collapse
+				ul.navbar-nav
+					li.nav-item.active
+						a.nav-link(href='/badges').text-white Badges
+					li.nav-item
+						a.nav-link(href='/calendario').text-white Calendario
+					li.nav-item
+						a.nav-link(href='/tutoriales').text-white Tutoriales
+					li.nav-item
+						a.nav-link(href='/contacto').text-white Contacto
+		
+		block content
+
+		footer.page-footer.font-small.teal.pt-3.pb-5.bg-dark
+			.footer-copyright.text-center.text-white
+				| © 2019 Copyright:
+				a(href='#')  ¿Jair Lizarraga?

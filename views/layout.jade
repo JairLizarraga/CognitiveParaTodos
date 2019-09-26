@@ -1,7 +1,7 @@
 doctype html
 html
 	head
-		title= title
+		title= "Cognitive 4 everyone"
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
 
@@ -11,10 +11,13 @@ html
 		script(src="/javascripts/bootstrap.js")
 		script.
 			particlesJS.load('particles-js','particlesConfig/particles1.json');
+			var loc = window.location.pathname;
+			var dir = loc.substring(0, loc.lastIndexOf('/'));
+			console.log(loc, dir);
 	body
 		#particles-js
 			nav.navbar.navbar-expand-lg.bg-dark.custom-toggler
-				a.navbar-brand(href='/').text-white(style='font-weight: bold;') Responsabilidad Social Corporativa - IBM de México
+				a.navbar-brand(href='/').text-white(style='font-weight: bold;') Cognitive 4 everyone: México
 				button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
 					span.navbar-toggler-icon
 				#navbarNav.collapse.navbar-collapse
@@ -26,13 +29,10 @@ html
 						li.nav-item
 							a.nav-link(href='tutoriales').text-white Tutoriales
 						li.nav-item
-							a.nav-link(href='recursos').text-white Recursos
-						li.nav-item
 							a.nav-link(href='contacto').text-white Contacto
 			
 		block content
 
 		footer.page-footer.font-small.teal.pt-3.pb-5.bg-dark
 			.footer-copyright.text-center.text-white
-				| © 2019 Copyright:
-				a(href='#')  ¿Jair Lizarraga?
+				| © 2019, by Jair Lizarraga.

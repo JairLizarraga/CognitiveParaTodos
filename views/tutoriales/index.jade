@@ -2,25 +2,35 @@ extends ./../layout
 
 block content
 	h1.central-text.text-center Tutoriales
-	h4.central-text(style='margin-top: 150px; text-align: center') Aprende de las tecnologías de IBM con los siguientes tutoriales.
+	h4.central-text(style='margin-top: 150px; text-align: center') Aprende de las tecnologías cognitivas de IBM con los siguientes tutoriales.
+
 
 	.container
 		.row
-			.col-md-5
-				p Hola
-
-	.container.bg-light.m-5
-		.row
-			.col-md-12
-				p Tutorial 1
-		.row
-			.col-md-12
-				p Descripción del taller
-
-	.container.bg-light.m-5
-		.row
-			.col-md-12
-				p Tutorial 2
-		.row
-			.col-md-12
-				p Descripción del taller 2
+			.col-md-12.text-center
+				h6.m-4
+					| Dentro de universo de actividades que llevamos a cabo en nuestra área, se encuentran actividades relacionadas con tecnología IBM,
+					| tales como Inteligencia Artificial, Blockchain, Internet de las Cosas y otras más. ¡Descúbrelas!
+		.row.mb-3
+			.col-md-3
+			.col-md-3
+				.card(style='width: 18rem;')
+					img.card-img-top(src='images/tutoriales/tjbot.jpeg', alt='TJBot image',width="290" height="190")
+					.card-body
+						h5.card-title 
+							| TJBot
+						p.card-text
+							| TJBot es un robot que hace uso de Inteligencia Artificial de IBM Watson, gracias a esto el robot (basado en Raspberry PI) 
+							| puede hablar, escuchar, observar e identificar objetos, analizar sentimientos, conectarse a redes sociales, entre otras cosas.
+						a.btn.btn-primary.stretched-link(href='/tutoriales/tjbot') Consulta el contenido
+			.col-md-3
+				.card(style='width: 18rem;')
+					img.card-img-top(src='images/tutoriales/chatbot.jpg', alt='Chatbot image', width="290" height="190")
+					.card-body
+						h5.card-title 
+							| Chatbots
+						p.card-text
+							| TJBot es un robot que hace uso de Inteligencia Artificial de IBM Watson, gracias a esto el robot (basado en Raspberry PI) 
+							| puede hablar, escuchar, observar e identificar objetos, analizar sentimientos, conectarse a redes sociales, entre otras cosas.
+						a.btn.btn-primary.stretched-link(href='/tutoriales/chatbot') Consulta el contenido
+			.col-md-3

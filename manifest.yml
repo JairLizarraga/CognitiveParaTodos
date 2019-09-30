@@ -1,5 +1,4 @@
 ---
 applications:
  - name: JairLizarraga2
-   random-route: true
    memory: 256M

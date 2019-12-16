@@ -1,4 +1,4 @@
 ---
 applications:
- - name: JairLizarraga2
+ - name: CognitiveParaTodos
    memory: 256M

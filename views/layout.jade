@@ -5,10 +5,10 @@ html
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
 
-		
 		script(src="/javascripts/jquery-3.4.1.min.js")
 		script(src="/javascripts/particles.js")
 		script(src="/javascripts/bootstrap.js")
+		script(src="/javascripts/pdfobject.js")
 		script.
 			particlesJS.load('particles-js','particlesConfig/particles1.json');
 			var loc = window.location.pathname;
@@ -29,10 +29,10 @@ html
 						li.nav-item
 							a.nav-link(href='tutoriales').text-white Tutoriales
 						li.nav-item
+							a.nav-link(href='cupon').text-white Cupón para académicos
+						li.nav-item
 							a.nav-link(href='contacto').text-white Información y contacto
-			
 		block content
-
 		footer.page-footer.font-small.teal.pt-3.pb-5.bg-dark
 			.footer-copyright.text-center.text-white
-				| © 2019, by Jair Lizarraga.
+				| Copyright © 2020, Jair Lizarraga. All rights reserved.

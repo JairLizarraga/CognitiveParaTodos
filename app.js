@@ -9,6 +9,7 @@ var badgesRouter = require('./routes/badges/badges');
 var calendarioRouter = require('./routes/calendario/calendario');
 var tutorialesRouter = require('./routes/tutoriales/tutoriales');
 var contactoRouter = require('./routes/contacto/contacto');
+var cuponRouter = require('./routes/cupon/cupon');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use('/badges', badgesRouter);
 app.use('/calendario', calendarioRouter);
 app.use('/tutoriales', tutorialesRouter);
 app.use('/contacto', contactoRouter);
+app.use('/cupon', cuponRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

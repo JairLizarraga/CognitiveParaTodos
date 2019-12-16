@@ -1,0 +1,25 @@
+extends ./../layout
+
+block content
+
+	h1.central-text.text-center Cupones
+	h4.central-text(style='margin-top: 150px; text-align: center') Accede a más recursos de la nube de IBM.
+
+	section.ftco-section.contact-section.ftco-degree-bg.p-3
+		.container.bg-light
+			.row
+				.col-md-12
+					h4.mt-3 Procedimiento
+			.row
+				.col-md-12
+					p Si perteneces a una institución educativa como profesor o estudiante utiliza este procedimiento para obtener un cupón en la nube de IBM.
+						| Esto añadirá a tu cuenta mayor capacidad de almacenamiento y de creación de servicios sin tener que pagar por ello.
+			.row
+				.col-md-12
+					p Las instrucciones contenidas en este manual te guiarán paso a paso para crear tu cuenta en IBM Cloud
+						| y generar tu cupón para acceder de a más recursos de forma gratuita.
+			.row
+				.col-md-12
+					#pdf1.mb-3(style='height: 750px;')
+						script.
+							PDFObject.embed('/resources/cupon/cupon_estudiante_profesor.pdf', "#pdf1")

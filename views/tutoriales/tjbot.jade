@@ -12,23 +12,24 @@ block content
 		.container.bg-light
 			.row
 				.col-md-12
-					h4.mt-3 Guía 1: Instalación
+					h4.mt-3 Manual de usuario.
 			.row
 				.col-md-12
-					p En este manual encontrarás las instrucciones para llevar a cabo la instalación inicial del proyecto: 
+					p Este manual fué diseñado para personas con/sin experiencia técnica previa, y aprenderás a:
 					ul
-						li - Instalación del sistema operativo.
-						li - Descarga e instalación de los archivos del proyecto TJBot.
-						li - Cómo realizar la conexión remota.
-						li - Cómo agregar redes wifi.
+						li - Las bases teóricas necesarias para el trabajo con tecnologías de la nube y de Inteligencia Artificial.
+						li - Instalación del software TJBot.
+						li - Construcción del robot.
+						li - Programación de TJBots con Node-RED.
+					p Los archivos auxiliares, tales como la copia de seguridad y los planos de TJBot, puedes consultarlos en esta misma página más adelante.
 			.row
 				.col-md-12
 					#pdf1.mb-3(style='height: 750px;')
 						script.
-							PDFObject.embed('/resources/tjbot/1- Guia de instalación.pdf', "#pdf1")
+							PDFObject.embed('/resources/tjbot/manual_integrado_tjbot.pdf', "#pdf1")
 			.row
 				.col-md-12
-					h5 En caso de que desees saltarte toda la instalación manual, puedes simplemente grabar este archivo en tu memoria SD:
+					h5 Copia de seguridad de TJBot, para una configuración rápida del robot:
 					h6 - Link de Google Drive: 
 						a(href='https://drive.google.com/file/d/1xrM3e_uGZ-AibXbaR-jZvV3wR_B21EX7/view?usp=sharing', download='TJBot3DPrintFiles.zip', target='_blank').btn.btn-primary Descargar
 					h6 El archivo pesa aproximadamente 3Gb por lo que la descarga podrá tardar algunos minutos. Una vez descargado el archivo te recomendamos alguno de los siguientes programas
@@ -41,43 +42,15 @@ block content
 					p.mb-3 Haciendo uso de cualquier programa para grabar memorias (te recomendamos los dos anteriores) utiliza la imagen descargada para grabar la memoria SD. 
 						| El proceso tardará alrededor de 20 minutos.
 						| Una vez concluida la grabación introduce la memoria a la Raspberry PI, conecta una bocina USB a la raspberry y el cable de corriente y enciende la tarjeta. 
-						| Tras un minuto deberás escuchar a TJBot diciendo "Buscando Red", lo que indicará que la memoria fué grabada correctamente.
-	
-	section.ftco-section.contact-section.ftco-degree-bg.p-3
-		.container.bg-light
+						| Tras un minuto deberás escuchar a TJBot diciendo "Buscando Red", lo que indicará que la memoria fué grabada correctamente.		
 			.row
 				.col-md-12
-					h4.mt-3 Guía 2: Configuración y actividades básicas
-			.row
-				.col-md-12
-					p 
-						| El manual número 2 te guiará en las bases para iniciar en el mundo de la programación por medio de TJBot, haciendo uso de
-						| Inteligencia Artificial y Node-RED. En éste manual se abordará:
-					ul
-						li - Construcción de TJBot.
-						li - Conexión remota a TJBot con Node-RED.
-						li - Creación de cuenta en IBM Cloud y obtención de API Keys.
-						li - Configuración de nuestro primer bot.
-						li - Programación de actividades básicas: Habla, led, servomotor, escucha, visión.
-			
-			.row
-				.col-md-12
-					#pdf2.mb-3(style='height: 750px;')
-						script.
-							PDFObject.embed('/resources/tjbot/2- Guia básica TJBot.pdf', "#pdf2")
-			.row
-				.col-md-12
-					h4 NOTAS
-			.row
-				.col-md-12
-					h6 
-						| Particulamente en este segundo manual se lleva a cabo el armado de la estructura física de TJBot, donde es conveniente hacer un pequeño paréntesis.
-						| En un inicio la carcasa del robot fué creada en material de cartón, y al poco tiempo los planos para realizar la impresión 3D fueron liberados. 
-						| En prácticas con los dos materiales anteriores encontramos algunos inconvenientes: El cartón resultaba frágil, y la impresión 3D costosa. Fué el motivo
-						| por el cual hemos liberado una versión en madera comprimida (MDF) que mejora el precio y la resistencia del robot.
+					h5 Planos para generar la carcasa de TJBot.
+					| En un inicio la carcasa del robot fué creada en material de cartón, y al poco tiempo los planos para realizar la impresión 3D fueron liberados. 
+					| En prácticas con los dos materiales anteriores encontramos algunos inconvenientes: El cartón resultaba frágil, y la impresión 3D costosa. Por este motivo
+					|  hemos liberado una versión en madera comprimida (MDF) que mejora el precio y la resistencia del robot.
+					p
 					h6 Los planos son los siguientes:
-
-			.row.m-4
 				table.table
 					thead.thead-light
 						tr
@@ -109,25 +82,3 @@ block content
 							td.align-middle
 								iframe(width='560', height='315', src='https://www.youtube-nocookie.com/embed/Yee2ylksP4U', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
 			
-	section.ftco-section.contact-section.ftco-degree-bg.p-3
-		.container.bg-light
-			.row
-				.col
-					h4.mt-3 Guía 3: Actividades avanzadas.
-			.row
-				.col
-					p 
-						| En esta tercer guía encontrarás aspectos más avanzados de TJBot, apto solo para curiosos, que solo serán el incentivo para motivar la creatividad del lector.
-						| Además se abordarán APIs externas, lo que permite a TJBot interactuar con tecnologías externas. Los temas abordados son:
-					ul
-						li - Antecedentes (JSON, arrays, condicionales).
-						li - Traducción de idiomas.
-						li - Descripción del entorno.
-						li - El clima.
-						li - Análisis de sentimientos
-						li - Twitteando selfies
-			.row
-				.col
-					#pdf3.mb-3(style='height: 750px;')
-						script.
-							PDFObject.embed('/resources/tjbot/3- Guia avanzada TJBot.pdf', "#pdf3")

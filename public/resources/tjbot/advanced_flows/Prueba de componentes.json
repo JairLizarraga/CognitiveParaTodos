@@ -1,0 +1,399 @@
+[
+    {
+        "id": "189a6c1b.bf2654",
+        "type": "tab",
+        "label": "Prueba de componentes",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "54830605.f57748",
+        "type": "tjbot-see",
+        "z": "189a6c1b.bf2654",
+        "botId": "708d1f0f.f61dd",
+        "mode": "see",
+        "verticalFlip": true,
+        "horizontalFlip": false,
+        "width": 960,
+        "height": 720,
+        "name": "",
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "1d0016aa.abd779"
+            ]
+        ]
+    },
+    {
+        "id": "994dbaa7.6998e8",
+        "type": "inject",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "54830605.f57748"
+            ]
+        ]
+    },
+    {
+        "id": "1d0016aa.abd779",
+        "type": "debug",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 470,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c6723d85.01fc9",
+        "type": "tjbot-listen",
+        "z": "189a6c1b.bf2654",
+        "botId": "708d1f0f.f61dd",
+        "name": "",
+        "x": 510,
+        "y": 200,
+        "wires": [
+            [
+                "242a79db.03c576"
+            ]
+        ]
+    },
+    {
+        "id": "d15c69b3.de81f8",
+        "type": "inject",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "topic": "",
+        "payload": "start",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "982e64e4.f99078"
+            ]
+        ]
+    },
+    {
+        "id": "e574b105.47cb1",
+        "type": "inject",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "topic": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 169,
+        "y": 216,
+        "wires": [
+            [
+                "982e64e4.f99078"
+            ]
+        ]
+    },
+    {
+        "id": "982e64e4.f99078",
+        "type": "change",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mode",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 200,
+        "wires": [
+            [
+                "c6723d85.01fc9"
+            ]
+        ]
+    },
+    {
+        "id": "242a79db.03c576",
+        "type": "debug",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 690,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "31bcbf51.b83d3",
+        "type": "tjbot-wave",
+        "z": "189a6c1b.bf2654",
+        "botId": "708d1f0f.f61dd",
+        "motion": "wave",
+        "name": "",
+        "x": 310,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "aae2f145.72633",
+        "type": "tjbot-shine",
+        "z": "189a6c1b.bf2654",
+        "botId": "708d1f0f.f61dd",
+        "mode": "shine",
+        "color": "random",
+        "duration": "",
+        "name": "",
+        "x": 340,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "fe769af1.b15c88",
+        "type": "tjbot-converse",
+        "z": "189a6c1b.bf2654",
+        "botId": "708d1f0f.f61dd",
+        "name": "",
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "af634d7f.771e1"
+            ]
+        ]
+    },
+    {
+        "id": "a5034f4e.f9faa",
+        "type": "inject",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 300,
+        "wires": [
+            [
+                "31bcbf51.b83d3",
+                "aae2f145.72633"
+            ]
+        ]
+    },
+    {
+        "id": "15cbeaa7.815ee5",
+        "type": "inject",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "fe769af1.b15c88"
+            ]
+        ]
+    },
+    {
+        "id": "af634d7f.771e1",
+        "type": "debug",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 480,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c5952cc.a6b23d",
+        "type": "tjbot-speak",
+        "z": "189a6c1b.bf2654",
+        "botId": "708d1f0f.f61dd",
+        "mode": "speak",
+        "payload": "",
+        "name": "",
+        "x": 310,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "50dee85a.f330f8",
+        "type": "tjbot-analyze-tone",
+        "z": "189a6c1b.bf2654",
+        "botId": "708d1f0f.f61dd",
+        "tones": "emotion",
+        "name": "",
+        "x": 340,
+        "y": 440,
+        "wires": [
+            [
+                "f1314fa0.37253"
+            ]
+        ]
+    },
+    {
+        "id": "d62b4515.4bb348",
+        "type": "tjbot-translate",
+        "z": "189a6c1b.bf2654",
+        "botId": "708d1f0f.f61dd",
+        "srcLang": "es",
+        "targetLang": "en",
+        "mode": "translate",
+        "name": "",
+        "x": 320,
+        "y": 500,
+        "wires": [
+            [
+                "cba09773.ac7d78"
+            ]
+        ]
+    },
+    {
+        "id": "7200845c.053e2c",
+        "type": "inject",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "topic": "",
+        "payload": "Hola",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 380,
+        "wires": [
+            [
+                "c5952cc.a6b23d"
+            ]
+        ]
+    },
+    {
+        "id": "f1314fa0.37253",
+        "type": "debug",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 500,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "cba09773.ac7d78",
+        "type": "debug",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 460,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "31b65700.df31b8",
+        "type": "inject",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "topic": "",
+        "payload": "Hola",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 440,
+        "wires": [
+            [
+                "50dee85a.f330f8"
+            ]
+        ]
+    },
+    {
+        "id": "a427ce0a.b86f2",
+        "type": "inject",
+        "z": "189a6c1b.bf2654",
+        "name": "",
+        "topic": "",
+        "payload": "Hola",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 500,
+        "wires": [
+            [
+                "d62b4515.4bb348"
+            ]
+        ]
+    },
+    {
+        "id": "708d1f0f.f61dd",
+        "type": "tjbot-config",
+        "z": "",
+        "botGender": "female",
+        "name": "Prueba",
+        "listen": "es-ES",
+        "speak": "es-ES",
+        "hasServo": true,
+        "hasLED": true,
+        "hasSpeaker": true,
+        "hasMicrophone": true,
+        "hasCamera": true,
+        "speakerDeviceId": "plughw:0,0"
+    }
+]

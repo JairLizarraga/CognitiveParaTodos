@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\views"
+    "\\routes",
+    "\\views",
+    "\\views\\tutoriales"
   ],
-  "SelectedNode": "\\views\\index.jade",
+  "SelectedNode": "\\views\\tutoriales\\tjbot.jade",
   "PreviewInSolutionExplorer": false
 }
